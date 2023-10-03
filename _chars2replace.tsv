@@ -1,0 +1,97 @@
+# Chars to replace, first column is for illustration only
+# replace column2 => column3
+# 63 distinct chars 
+# spaces, underscore, tab change to U+0020
+_	005F	0020	95 underscore
+ 	00A0	0020	160 no-break space
+\t	0009	0020	tab
+''	2009	0020	8201 thin space
+''	2060	0020	8288 word joiner
+_ 	0331	0020	817 combining macron below
+''	0332	0020	818 combining low line
+''	2002	0020	8194 en space
+''	202F	0020	8239 narrow no-break space
+''	2005	0020	8197 fp em space
+''	2008	0020	8200 punctuation space
+''	2007	0020	8199 figure space
+
+
+# hyphen change to hyphen-minus U+002D
+—	00AD	002D	173 soft hyphen
+‐	2010	002D	8208 hyphen
+‑	2011	002D	8209 non-breaking hyphen
+—	2012	002D	8210 figure dash
+–	2013	002D	8211 en dash
+—	2014	002D	8212 em dash
+—	2015	002D	8213 horizontal bar
+−	2212	002D	8722 minus sign
+─	2500	002D	9472 box drawings light horizontal
+━	2501	002D	9473 box drawings heavy horizontal
+—	FE63	002D	65123 Small Hyphen-minus
+
+
+# apostrophe U+0027
+'	0060	0027	96 Grave accent (backtick)
+'	2032	0027	8242 Prime
+'	02BC	0027	700 Modifier letter apostrophe
+'	FF07	0027	65287 Fullwidth apostrophe 
+'	2019	0022	8217 right single quotation mark
+
+
+# quotation
+# '	2019	0022 more often is apostrophe
+'	2018	0022	8216 left single quotation mark
+#'	2019	0022	8217 right single quotation mark
+
+«	00AB	0022	171 left-pointing double angle quotation mark
+»	00BB	0022	187 right-pointing double angle quotation mark
+
+‚	201A	0022	8218 single low-9 quotation mark
+‛	201B	0022	8219 single high-reversed-9 quotation mark
+
+“	201C	0022	8220 left double quotation mark
+”	201D	0022	8221 right double quotation mark
+
+„	201E	0022	8222 double low-9 quotation mark
+"	201F	0022	8223 double high-reversed-9 quotation mark
+
+‹	2039	0022	8249 single left-pointing angle quotation mark
+›	203A	0022	8250 single right-pointing angle quotation mark
+
+⹂	2E42	0022	11842 	double low-reversed-9 quotation mark
+
+
+# ASCII
+# $	0024	0020	# keep?
+# %	0025	0020	# keep?
+&	0026	0020
+(	0028	0020
+)	0029	0020
+
+#:	003A	0020	58 Colon
+;	003B	002C	59 Semicolon -> Comma (or Full Stop 2E)
+<	003C	0020
+>	003E	0020
+^	005E	0020
+
+=	003D	0020
+*	002A	0020
++	002B	0020
+
+@	0040	0020
+[	005B	0020
+]	005D	0020
+^	005E	0020	94 Circumflex Accent
+{	007B	0020
+}	007D	0020
+/	002F	0020	47 solidus
+\	005C	0020	92 reverse solidus
+|	007C	0020	124 vertical line
+~	007E	0020	126 tilde
+
+# other
+ѣ	0463	0435	ять -> е Cyrillic Small Letter Yat
+Ѳ	0473	0424	1139 фита Cyrillic Small Letter Fita
+...	2026	002E	8230 horizontal ellipsis (многоточие) # keep?
+•	2022	0020	8226 bullet
+#́	0301	0000	769 Combining Acute Accent бо́льшую (remove)

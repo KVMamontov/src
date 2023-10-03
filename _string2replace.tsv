@@ -1,0 +1,61 @@
+# replace substring: s_old TAB TAB s_new 
+# replacements are applied in order from the longest to the shortest
+
+# #################
+# for librusec only
+
+# !...	! 
+0021	002E	002E	002E		0021	0020
+
+# !..	! 
+0021	002E	002E		0021	0020
+
+# !.	! 
+0021	002E		0021	0020
+
+
+# ?...	? 
+003F	002E	002E	002E		003F	0020
+
+# ?..	? 
+003F	002E	002E		003F	0020
+
+# ?.	? 
+003F	002E		003F	0020
+
+# ?,	? 
+003F	002C		003F	0020
+
+# ,...	, 
+002C	002E	002E	002E		002C	0020
+
+# ,..	, 
+002C	002E	002E		002C	0020
+
+# ,.	, 
+002C	002E		002C	0020
+
+# ...	. 
+002E	002E	002E		002E	0020
+
+# #################
+
+
+# multiple spaces to one
+0020	0020	0020	0020		0020
+0020	0020	0020		0020
+0020	0020		0020
+
+# multiple quotas to one
+#0022	0022	0022		0022
+#0022	0022		0022
+
+# TinyStories
+# <|endoftext|> 
+#003C	007C	0065	006E	0064	006F	0066	0074	0065	0078	0074	007C	003E		000A
+#<003C	|007C	e0065	n006E	d0064	o006F	f0066	t0074	e0065	x0078	t0074	|007C	>003E		000A
+
+# endoftext
+0065	006E	0064	006F	0066	0074	0065	0078	0074		000A
+# completely remove quotation
+0022		0020
